@@ -1,0 +1,21 @@
+Paper item	Program	Line	Output	Input
+Figure 1 (fig:hidden)	code/07_report.py	435	figures/fig_hidden.pdf	results/validation_days.csv, results/validation_keywords.csv
+Figure 2 (fig:rd)	code/07_report.py	463	figures/fig_rd.pdf	results/rd_series.csv
+Figure 3 (fig:platforms)	code/07_report.py	478	figures/fig_platforms.pdf	results/rd_platform.csv
+Figure 4 (fig:crosswalk)	code/07_report.py	493	figures/fig_crosswalk.pdf	results/crosswalk_platform.csv
+Table 1 (tab:schema)	tex/body.tex	43	(conceptual changelog table; no computed output)	docs/source_inventory.csv, data/derived/complete_columns.csv
+Table 2 (tab:hiddenkw)	code/07_report.py	87	tex/tab_hidden_kw.tex	results/validation_keywords.csv, results/validation.json
+Table 3 (tab:hiddencat)	code/07_report.py	102	tex/tab_hidden_cat.tex	results/hidden_by_category.csv
+Table 4 (tab:rd)	code/07_report.py	120	tex/tab_rd.tex	results/rd_pooled.csv, results/rd.json
+Table 5 (tab:bandwidth)	code/07_report.py	151	tex/tab_bandwidth.tex	results/rd_bandwidth.csv
+Table 6 (tab:robust)	code/07_report.py	351	tex/tab_robust.tex	results/rd_robustness.csv
+Table 7 (tab:rdplatform)	code/07_report.py	180	tex/tab_rd_platform.tex	results/rd_platform.csv
+Supplement Table A1 (tab:crosswalk)	code/07_report.py	231	tex/tab_crosswalk.tex	results/crosswalk_destinations.csv, results/category_shift.csv
+Aggregate-versus-archive agreement (Sec. 6, inline)	code/03_validate.py	79	results/validation_days.csv, results/validation_keywords.csv	data/derived/dump_*.parquet, data/derived/kw_*.parquet
+Hidden-keyword register (Sec. 6, inline)	code/03_validate.py	142	results/validation.json, results/hidden_by_category.csv	data/derived/dump_*.parquet, data/derived/kw_*.parquet
+Regression discontinuity register (Tables 4-6 inputs)	code/04_rd.py	345	results/rd.json, results/rd_series.csv	data/derived/dump_*.parquet, data/derived/kw_*.parquet
+Crosswalk register (Fig. 4 and Supplement inputs)	code/05_crosswalk.py	62	results/crosswalk.json	results/crosswalk_platform.csv, results/crosswalk_destinations.csv
+Long-run persistence register (Sec. 6, inline)	code/06_longrun.py	46	results/longrun.json	results/longrun_days.csv, results/longrun_agg_daily.csv
+Schema-aware reconstruction (Sec. 3, no table label)	code/08_schema_aware.py	39	results/schema_aware_validation.json	data/derived/dump_*.parquet, data/derived/kw_*.parquet
+Date reconciliation (Sec. 6, no table label)	code/09_reconcile_dates.py	40	results/date_reconciliation.json	results/platform_names.csv, data/derived/dump_*.parquet
+Wide-table reflow check (Apparatus)	code/10_readable_tables.py	34	results/readable_table_validation.json	tex/tab_bandwidth.tex, tex/tab_robust.tex

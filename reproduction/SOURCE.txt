@@ -1,0 +1,17 @@
+Reduced analysis inputs (data/derived/): derived from the European Commission
+DSA Transparency Database (https://transparency.dsa.ec.europa.eu/), CC BY 4.0
+unless otherwise indicated.  The 71 daily record reductions and the 21 monthly
+complete aggregate reductions are shipped pre-reduced.  The acquisition step
+that downloads and reduces the publisher files is not included and the run uses
+no network access.  The publisher checksum records for the source archives are
+kept in data/derived/dump_checksum_*.csv, data/derived/complete_checksums.csv
+and data/archive_snapshot_lock.json.
+
+Linux Libertine fonts (code/fonts/*.otf): SIL Open Font License, see
+code/fonts/OFL.txt; used only to render the figures.
+
+The Python packages listed in ENVIRONMENT.json are installed external
+dependencies and are not vendored.
+
+No blanket code license was present in the source package; no new license grant
+is inferred over third-party material.
